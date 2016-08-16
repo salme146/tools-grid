@@ -13,7 +13,7 @@ mask_p = ncread(fname,'mask_psi');
 
 for i = 1:ii;
     for j = 1:jj;
-        if d(i,j)>4;
+        if d(i,j)>4; % 4 is my minh - CHECK THIS VALUE IN YOUR GRID!
             mask_r(i,j)=1;
         elseif d(i,j)==4;
             mask_r(i,j)=0;
